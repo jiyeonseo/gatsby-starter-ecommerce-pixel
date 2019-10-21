@@ -30,8 +30,8 @@ class ProductPageTemplate extends React.PureComponent {
       <Layout location={this.props.location}>
         <Helmet>
 
-        <meta property="og:title" content={name} />
-        <meta property="og:description" content={name} />
+        <meta property="og:title" content={data.name} />
+        <meta property="og:description" content={data.name} />
         <meta property="og:url" content={'https://agitated-pike-1d9669.netlify.com/product/'+data.id+'/'} />
         <meta property="og:image" content={data.mainImage} />
         <meta property="product:brand" content='Cheese Market' />
@@ -40,7 +40,7 @@ class ProductPageTemplate extends React.PureComponent {
         <meta property="product:price:amount" content='1000' />
         <meta property="product:price:currency" content='KRW' />
         <meta property="product:retailer_item_id" content={data.id} />
-        <title>Product_{name}</title>
+        <title>Product_{data.name}</title>
 
         </Helmet>
         <ProductSummary {...product} />
