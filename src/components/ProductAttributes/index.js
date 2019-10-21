@@ -12,18 +12,6 @@ export default ({
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>My Titletttttt</title>
-        <link rel="canonical" href="http://mysite.com/example" />
-        <meta property="og:url" content="https://marhenj.com/product/예약1차신상-15할인퍼참-증정-신디백-버건디/941/" />
-        <meta property="og:description" content={description} />
-        <meta property="og:title" content="[예약1차][신상 15%할인+퍼참 증정] 신디백 버건디" />
-        <meta property="og:site_name" content="마르헨제이" />
-        <meta property="og:type" content="product" />
-        <meta property="og:image" content="https://www.marhenj.com/web/product/big/201909/e399986b2d580e4e00e274403eb0cf8e.jpg" />
-        <meta property="product:price:amount" content="141100" />
-        <meta property="product:price:currency" content="KRW" />
-        <meta property="product:sale_price:amount" content="141100" />
-        <meta property="product:sale_price:currency" content="KRW" />
       </Helmet>
       <Header as="h3">About this product</Header>
       <p>{description}</p>

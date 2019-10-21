@@ -28,7 +28,21 @@ class ProductPageTemplate extends React.PureComponent {
 
     return (
       <Layout location={this.props.location}>
-        <Helmet title={slug} />
+        <Helmet>
+
+        <meta property="og:title" content={name} />
+        <meta property="og:description" content={name} />
+        <meta property="og:url" content={'https://agitated-pike-1d9669.netlify.com/product/'+data.id+'/'} />
+        <meta property="og:image" content={data.mainImage} />
+        <meta property="product:brand" content='Cheese Market' />
+        <meta property="product:availability" content='in stock' />
+        <meta property="product:condition" content='new' />
+        <meta property="product:price:amount" content='1000' />
+        <meta property="product:price:currency" content='KRW' />
+        <meta property="product:retailer_item_id" content={data.id} />
+        <title>Product_{name}</title>
+
+        </Helmet>
         <ProductSummary {...product} />
         <ProductAttributes {...product} />
       </Layout>
