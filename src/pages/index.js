@@ -46,7 +46,6 @@ export const pageQuery = graphql`
           name
           description
           background_colour
-          new
           mainImageHref
           meta {
             display_price {
